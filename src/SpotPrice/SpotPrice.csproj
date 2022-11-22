@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>net461;net472;netstandard2.0;net6.0</TargetFrameworks>
-	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -14,6 +13,7 @@
     <PackageTags>SpotPrice</PackageTags>
     <Description>The SpotPrice client library is a runtime client for working with https://api.spot-hinta.fi API.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <RepositoryUrl>https://github.com/aleksi-karppi/SpotPrice</RepositoryUrl>
     <PackageProjectUrl>https://github.com/aleksi-karppi/SpotPrice</PackageProjectUrl>
   </PropertyGroup>
@@ -36,9 +36,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\README.md">
+    <None Include="$(SolutionDir)LICENSE.txt">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+      <PackagePath>LICENSE.txt</PackagePath>
+    </None>
+    <None Include="$(SolutionDir)README.md">
+      <Pack>True</Pack>
+      <PackagePath>README.md</PackagePath>
     </None>
   </ItemGroup>
   
