@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{5FCD11
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotPrice", "src\SpotPrice\SpotPrice.csproj", "{D99BDE40-FA08-4882-B115-4A3733C47082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotPrice.Client", "src\SpotPrice.Client\SpotPrice.Client.csproj", "{D99BDE40-FA08-4882-B115-4A3733C47082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotPrice.Documentation", "src\SpotPrice.Documentation\SpotPrice.Documentation.csproj", "{2074DD6F-F9C5-48C2-AE7B-A7963D36F60F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{D99BDE40-FA08-4882-B115-4A3733C47082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99BDE40-FA08-4882-B115-4A3733C47082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99BDE40-FA08-4882-B115-4A3733C47082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2074DD6F-F9C5-48C2-AE7B-A7963D36F60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2074DD6F-F9C5-48C2-AE7B-A7963D36F60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2074DD6F-F9C5-48C2-AE7B-A7963D36F60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2074DD6F-F9C5-48C2-AE7B-A7963D36F60F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

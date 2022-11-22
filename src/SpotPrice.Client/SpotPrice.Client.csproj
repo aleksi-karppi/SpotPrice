@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;net472;netstandard2.0;net6.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SpotPrice.Client</PackageId>
+    <Version>0.1.2</Version>
+    <Authors>Aleksi Karppi</Authors>
+    <Company></Company>
+    <Copyright></Copyright>
+    <PackageTags>SpotPrice.Client</PackageTags>
+    <Description>The SpotPrice client library is a runtime client for working with https://api.spot-hinta.fi API.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/aleksi-karppi/SpotPrice</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/aleksi-karppi/SpotPrice</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
+    <OutputPath>..\..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0|AnyCPU'">
+    <OutputPath>..\..\bin\Release\</OutputPath>
+	<DefineConstants>RELEASE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Error\" />
+	<Folder Include="Extension\" />
+    <Folder Include="Model\" />
+    <Folder Include="Request\Builder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(SolutionDir)LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>LICENSE.txt</PackagePath>
+    </None>
+    <None Include="$(SolutionDir)README.md">
+      <Pack>True</Pack>
+      <PackagePath>README.md</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="3.2.4" />
+  </ItemGroup>
+  
+</Project>
